@@ -8,7 +8,9 @@ npm install -S afeiship/next-webpack-alias --registry=https://registry.npm.taoba
 
 ## usage
 ```js
-var res = nx.webpackAlias({
+import nxWebpackAlias from 'next-webpack-alias';
+
+const res = nxWebpackAlias({
   react: 'react',
   'react-dom': ['@hot-loader/react-dom', true]
 });
