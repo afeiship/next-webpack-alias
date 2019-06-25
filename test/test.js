@@ -1,15 +1,27 @@
 var nx = require('next-js-core2');
 require('../src/next-webpack-alias');
 
+describe('Basic test', () => {
+  test('normal && array valie', function() {
+    var alias1 = {
+      react: 'react',
+      'react-dom': ['@hot-loader/react-dom', false]
+    };
+    var alias2 = {
+      react: 'react',
+      'react-dom': ['@hot-loader/react-dom', true]
+    };
 
-test('nx.webpackAlias', function () {
-  var obj1 = {name: 'fei'};
-  var obj2 = {email: '1290657123@qq.com'};
+    var res1 = nx.webpackAlias(alias1);
+    var res2 = nx.webpackAlias(alias2);
 
-  var result = {};
+    expect(res1).toEqual({
+      react: 'react'
+    });
 
-  nx.webpackAlias(result, obj1, obj2);
-
-  expect(result.name, obj1.name).toBe(null);
+    expect(res2).toEqual({
+      react: 'react',
+      'react-dom': '@hot-loader/react-dom'
+    });
+  });
 });
-

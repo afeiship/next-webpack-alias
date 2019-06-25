@@ -2,7 +2,7 @@
  * name: next-webpack-alias
  * url: https://github.com/afeiship/next-webpack-alias
  * version: 1.0.0
- * date: 2019-06-25T04:05:59.651Z
+ * date: 2019-06-25T04:36:39.607Z
  * license: MIT
  */
 
@@ -12,7 +12,7 @@
 
   nx.webpackAlias = function(inObject) {
     var result = {};
-    nx.each(inObject, function(key, value) {
+    nx.forIn(inObject, function(key, value) {
       switch (true) {
         case value instanceof Array && value.length === 2:
           value[1] && (result[key] = value[0]);
@@ -21,8 +21,8 @@
           result[key] = value;
           break;
       }
-      return result;
     });
+    return result;
   };
 
   if (typeof module !== 'undefined' && module.exports) {
