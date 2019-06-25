@@ -1,0 +1,28 @@
+{
+  "name": "next-webpack-alias",
+  "version": "0.0.1",
+  "description": "Special alias for webpack",
+  "main": "dist/next-webpack-alias.js",
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "next"
+  ],
+  "homepage": "https://github.com/afeiship/next-webpack-alias",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "build",
+    "src",
+    "gulp",
+    "gulpfile.js"
+  ]
+}
