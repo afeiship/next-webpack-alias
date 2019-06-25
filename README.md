@@ -18,4 +18,9 @@ var res = nx.webpackAlias({
   react: 'react',
   'react-dom': '@hot-loader/react-dom'
 }
+
+// if false
+{
+  react: 'react'
+}
 ```
