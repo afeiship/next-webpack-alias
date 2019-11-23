@@ -1,9 +1,9 @@
 # next-webpack-alias
-> Special alias for webpack
+> Special alias for webpack.
 
 ## installation
 ```bash
-npm install -S afeiship/next-webpack-alias --registry=https://registry.npm.taobao.org
+npm install -S @feizheng/next-webpack-alias
 ```
 
 ## usage

@@ -1,8 +1,8 @@
 /*!
- * name: next-webpack-alias
+ * name: @feizheng/next-webpack-alias
  * url: https://github.com/afeiship/next-webpack-alias
  * version: 1.0.0
- * date: 2019-06-25T04:36:39.607Z
+ * date: 2019-11-23T07:43:28.072Z
  * license: MIT
  */
 
