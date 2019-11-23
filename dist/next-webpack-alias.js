@@ -2,13 +2,13 @@
  * name: @feizheng/next-webpack-alias
  * url: https://github.com/afeiship/next-webpack-alias
  * version: 1.0.0
- * date: 2019-11-23T07:43:28.072Z
+ * date: 2019-11-23T07:44:23.506Z
  * license: MIT
  */
 
 (function() {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('next-js-core2');
+  var nx = global.nx || require('@feizheng/next-js-core2');
 
   nx.webpackAlias = function(inObject) {
     var result = {};
