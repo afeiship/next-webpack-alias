@@ -35,5 +35,8 @@
   },
   "dependencies": {
     "@feizheng/next-js-core2": "^2.4.1"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
