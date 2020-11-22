@@ -1,18 +1,19 @@
 /*!
- * name: @feizheng/next-webpack-alias
- * url: https://github.com/afeiship/next-webpack-alias
+ * name: @jswork/next-webpack-alias
+ * description: Special alias for webpack.
+ * homepage: https://github.com/afeiship/next-webpack-alias
  * version: 1.0.0
- * date: 2019-11-23T07:44:23.506Z
+ * date: 2020-11-22 18:04:08
  * license: MIT
  */
 
-(function() {
+(function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@feizheng/next-js-core2');
+  var nx = global.nx || require('@jswork/next');
 
-  nx.webpackAlias = function(inObject) {
+  nx.webpackAlias = function (inObject) {
     var result = {};
-    nx.forIn(inObject, function(key, value) {
+    nx.forIn(inObject, function (key, value) {
       switch (true) {
         case value instanceof Array && value.length === 2:
           value[1] && (result[key] = value[0]);
@@ -29,5 +30,3 @@
     module.exports = nx.webpackAlias;
   }
 })();
-
-//# sourceMappingURL=next-webpack-alias.js.map
