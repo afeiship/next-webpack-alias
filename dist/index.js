@@ -3,7 +3,7 @@
  * description: Special alias for webpack.
  * homepage: https://github.com/afeiship/next-webpack-alias
  * version: 1.0.0
- * date: 2020-11-22 18:04:08
+ * date: 2020-11-22 18:04:57
  * license: MIT
  */
 
